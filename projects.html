@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Ahmed Noor</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">AHMED<span>_</span>NOOR</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="soc-reports.html">SOC Reports</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle">MENU</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="page-hero" style="border-bottom:none;">
+    <div class="eyebrow">Projects</div>
+    <h1>Labs, exploits,<br>and builds.</h1>
+    <p class="lede">Hands-on work spanning SIEM deployment, log analysis, manual web exploitation, and network penetration testing. Repos for most of these are live on GitHub.</p>
+  </section>
+</main>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Blue Team</div>
+      <h2>Detection &amp; monitoring</h2>
+    </div>
+    <div class="grid cols-2">
+      <div class="card">
+        <div class="tag-row"><span class="tag status-live">SIEM</span></div>
+        <h3>Wazuh SIEM Home Lab</h3>
+        <p>Deployed a Wazuh SIEM server in a virtual machine from scratch — set up the dashboard, wrote custom detection rules in local_rules.xml, and analyzed the resulting alert logs in depth to understand detection logic end-to-end.</p>
+        <div class="card-meta">Wazuh / VirtualBox / local_rules.xml</div>
+      </div>
+      <div class="card">
+        <div class="tag-row"><span class="tag">Log Analysis</span></div>
+        <h3>Windows Event Log Correlation Labs</h3>
+        <p>Practical log analysis exercises correlating login events, account lockouts, and USB device detection in Windows Event Viewer to identify suspicious activity patterns.</p>
+        <div class="card-meta">Windows Event Viewer</div>
+      </div>
+      <div class="card">
+        <div class="tag-row"><span class="tag">Endpoint</span></div>
+        <h3>Sysmon-Based Process Monitoring</h3>
+        <p>Hands-on analysis of Sysmon event logs — including Event ID 1 for process creation — to trace process execution chains and spot anomalous behavior.</p>
+        <div class="card-meta">Sysmon / Event ID 1</div>
+      </div>
+      <div class="card">
+        <div class="tag-row"><span class="tag">Planning</span></div>
+        <h3>Cybersecurity Career Roadmap</h3>
+        <p>A four-phase personal roadmap: SOC fundamentals → offensive security foundations → web security / bug bounty → red team / OSCP — used as a self-directed learning plan.</p>
+        <div class="card-meta">Self-directed learning</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Red Team</div>
+      <h2>Offensive security</h2>
+    </div>
+    <div class="grid cols-2">
+      <div class="card">
+        <div class="tag-row"><span class="tag status-live">Web</span></div>
+        <h3>Web Penetration Testing — PortSwigger Academy</h3>
+        <p>Manually exploited SQL Injection and Cross-Site Scripting (XSS) vulnerabilities without automated tools, developing a deep understanding of HTTP request manipulation using Burp Suite as an intercepting proxy.</p>
+        <div class="card-meta">Burp Suite / Manual Exploitation</div>
+      </div>
+      <div class="card">
+        <div class="tag-row"><span class="tag status-live">Network</span></div>
+        <h3>Network Penetration Testing Labs — Hack The Box</h3>
+        <p>Completed beginner-level HTB machines using Nmap for reconnaissance and Metasploit for exploitation; practiced reverse shell techniques and post-exploitation in isolated VM environments.</p>
+        <div class="card-meta">Nmap / Metasploit / HTB</div>
+      </div>
+      <div class="card">
+        <div class="tag-row"><span class="tag">Web</span></div>
+        <h3>DVWA Web Vulnerability Lab</h3>
+        <p>Set up Damn Vulnerable Web Application on Ubuntu and worked through common web vulnerability scenarios, exploring SSL and WAF concepts along the way.</p>
+        <div class="card-meta">DVWA / Ubuntu / WAF</div>
+      </div>
+      <div class="card">
+        <div class="tag-row"><span class="tag">Mobile</span></div>
+        <h3>Android &amp; Payload Research</h3>
+        <p>Explored Android hacking techniques using Evil-Droid for payload generation in a controlled Kali Linux / VirtualBox lab, and practiced basic antivirus bypass with simple cryptography techniques.</p>
+        <div class="card-meta">Evil-Droid / Kali Linux</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="border-bottom:none;">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">University coursework</div>
+      <h2>Earlier builds</h2>
+    </div>
+    <div class="rows">
+      <div class="row">
+        <div class="row-label">Sem. 1 · C++</div>
+        <div>
+          <h3>University Program Listing</h3>
+          <p>Console application listing university courses and program offerings.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-label">Sem. 2 · Java / OOP</div>
+        <div>
+          <h3>Secure ATM Simulation</h3>
+          <p>Functional ATM interface applying classes, inheritance, and encapsulation, with user authentication and secure transaction logic.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-label">Sem. 3 · MySQL</div>
+        <div>
+          <h3>Student Attendance Management System</h3>
+          <p>Full LMS-style attendance system with relational tables for students, courses, and attendance records.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-label">Sem. 4 · C# / .NET</div>
+        <div>
+          <h3>Wordle Game — Windows Application</h3>
+          <p>Fully playable Windows Forms clone of Wordle, managing game state and UI feedback.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-label">Sem. 5 · OS</div>
+        <div>
+          <h3>OS Calculator</h3>
+          <p>Calculator utility built to understand low-level system calls and process management.</p>
+        </div>
+      </div>
+    </div>
+    <p class="note">Coming soon: CTF write-ups, further Hack The Box walkthroughs, and additional detection engineering projects as they're completed.</p>
+    <div style="margin-top:30px;">
+      <a class="arrow-link" href="https://github.com/AhmedNoo00R" target="_blank" rel="noopener"><span class="glyph">↳</span> Browse all repos on GitHub</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-bottom">
+      <span>© 2026 Ahmed Noor</span>
+      <a class="arrow-link" href="contact.html"><span class="glyph">↳</span> Get in touch</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

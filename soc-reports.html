@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SOC Reports — Ahmed Noor</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">AHMED<span>_</span>NOOR</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="soc-reports.html">SOC Reports</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle">MENU</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="page-hero" style="border-bottom:none;">
+    <div class="eyebrow">SOC Reports · Detection Rules · Playbooks</div>
+    <h1>Notes from<br>the SOC desk.</h1>
+    <p class="lede">Detection rules, log analysis notes, and investigation logic built during my Wazuh home lab work and the Axeronix internship.</p>
+  </section>
+</main>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Detection Rules</div>
+      <h2>Custom Wazuh rules</h2>
+    </div>
+    <div class="card" style="max-width:640px;">
+      <div class="tag-row"><span class="tag status-live">local_rules.xml</span></div>
+      <h3>Custom Wazuh Detection Rules</h3>
+      <p>Custom rules added to local_rules.xml on a self-hosted Wazuh SIEM, tuned against real log activity from lab VMs.</p>
+      <div class="card-meta">Wazuh / XML rule syntax</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">SOC Reports</div>
+      <h2>Log analysis &amp; correlation</h2>
+    </div>
+    <div class="grid cols-2">
+      <div class="card">
+        <div class="tag-row"><span class="tag">Windows Event Viewer</span></div>
+        <h3>Windows Log Analysis Notes</h3>
+        <p>Working notes and correlation logic for identifying account lockouts, failed login patterns, and USB insertion events via Windows Event Viewer.</p>
+      </div>
+      <div class="card">
+        <div class="tag-row"><span class="tag">Sysmon</span></div>
+        <h3>Sysmon Detection Notes</h3>
+        <p>Reference notes on key Sysmon event IDs and how they're used to trace process creation and execution behavior during investigations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="border-bottom:none;">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Playbooks</div>
+      <h2>Incident response</h2>
+    </div>
+    <p class="note">Coming soon: formal incident response playbooks and published SOC investigation reports, as they're completed during the Axeronix internship.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-bottom">
+      <span>© 2026 Ahmed Noor</span>
+      <a class="arrow-link" href="contact.html"><span class="glyph">↳</span> Get in touch</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

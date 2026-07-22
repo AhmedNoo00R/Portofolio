@@ -63,32 +63,37 @@
     </div>
     <div class="grid cols-2">
       <div class="card">
-        <div class="tag-row"><span class="tag status-live">In Progress</span></div>
+        <div class="tag-row"><span class="tag status-progress">In Progress</span></div>
         <h3>eJPTv2 — Junior Penetration Tester</h3>
         <p>INE / eLearnSecurity, 2025. Preparing for a fully practical exam covering exploitation, pivoting, and reporting.</p>
       </div>
-      <div class="card">
-        <div class="tag-row"><span class="tag">2024</span></div>
+      <div class="card clickable" onclick="openLightbox()">
+        <div class="tag-row"><span class="tag status-complete">Completed · 2024</span></div>
         <h3>Ethical Hacking &amp; Cybersecurity</h3>
-        <p>Kamyab Freelancer Program, Government of Punjab, Pakistan — government-recognised certificate covering core ethical hacking concepts and cybersecurity fundamentals.</p>
+        <p>Kamyab Freelancer Program (Maryam Nawaz Kamyab Freelance Certificate), Government of Punjab, Pakistan — government-recognised certificate covering core ethical hacking concepts and cybersecurity fundamentals. Scored <strong>98% in the final assessment.</strong></p>
+        <div class="view-hint">↳ Click to view certificate</div>
+        <div class="card-meta">
+          Certificate ID: SZP99285 · Issued Feb 21, 2026<br>
+          <a class="arrow-link" href="https://www.linkedin.com/posts/ahmed-n000r_excited-to-share-that-ive-officially-earned-share-7433943222076395520-OPWC/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGN_bpYBNxmHY14edEUFITm764o-_lpaujk" target="_blank" rel="noopener" onclick="event.stopPropagation()" style="margin-top:8px; display:inline-flex;"><span class="glyph">↳</span> View announcement on LinkedIn</a>
+        </div>
       </div>
       <div class="card">
-        <div class="tag-row"><span class="tag">Exam Pending</span></div>
+        <div class="tag-row"><span class="tag status-pending">Exam Pending</span></div>
         <h3>CompTIA Security+</h3>
         <p>Self-study, coursework completed — full material on threats, cryptography, network security, and compliance.</p>
       </div>
       <div class="card">
-        <div class="tag-row"><span class="tag">Re-attempt Planned</span></div>
+        <div class="tag-row"><span class="tag status-planned">Re-attempt Planned</span></div>
         <h3>Certified in Cybersecurity (CC)</h3>
         <p>ISC2 Free Certification Programme — training completed, sat the exam, near-proficient in two domains.</p>
       </div>
       <div class="card">
-        <div class="tag-row"><span class="tag">Overview Completed</span></div>
+        <div class="tag-row"><span class="tag status-complete">Overview Completed</span></div>
         <h3>TryHackMe — SOC Level 1</h3>
         <p>Completed a full path overview covering SOC fundamentals.</p>
       </div>
       <div class="card">
-        <div class="tag-row"><span class="tag">Long-Term Target</span></div>
+        <div class="tag-row"><span class="tag status-longterm">Long-Term Target</span></div>
         <h3>OSCP+</h3>
         <p>Offensive Security Certified Professional — the long-term certification goal underpinning the red team career path.</p>
       </div>
@@ -162,6 +167,23 @@
     </div>
   </div>
 </footer>
+
+<div class="lightbox" id="cert-lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()">✕ Close</button>
+  <img src="images/kamyab-certificate.jpg" alt="Ethical Hacking & Cybersecurity Certificate — Kamyab Freelancer Program">
+</div>
+
+<script>
+function openLightbox(){
+  document.getElementById('cert-lightbox').classList.add('open');
+}
+function closeLightbox(){
+  document.getElementById('cert-lightbox').classList.remove('open');
+}
+document.getElementById('cert-lightbox').addEventListener('click', function(e){
+  if(e.target === this) closeLightbox();
+});
+</script>
 
 <script src="js/script.js"></script>
 </body>

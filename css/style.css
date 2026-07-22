@@ -333,6 +333,13 @@ p.lede{
 }
 .tag.status-live{ color: var(--signal); border-color: rgba(86,211,100,0.35); }
 
+/* status color variants */
+.tag.status-complete{ color: #56d364; border-color: rgba(86,211,100,0.4); background: rgba(86,211,100,0.06); }
+.tag.status-progress{ color: #e3b341; border-color: rgba(227,179,65,0.4); background: rgba(227,179,65,0.06); }
+.tag.status-pending{  color: #e3b341; border-color: rgba(227,179,65,0.4); background: rgba(227,179,65,0.06); }
+.tag.status-longterm{ color: #58a6ff; border-color: rgba(88,166,255,0.4); background: rgba(88,166,255,0.06); }
+.tag.status-planned{  color: #e3b341; border-color: rgba(227,179,65,0.4); background: rgba(227,179,65,0.06); }
+
 .card h3{ margin: 0; }
 .card p{ color: var(--ink-dim); font-size: 14.5px; }
 
@@ -447,3 +454,44 @@ footer{
   padding-left: 16px;
   margin-top: 36px;
 }
+
+/* ---------- clickable card ---------- */
+.card.clickable{ cursor: pointer; }
+.card.clickable:hover{ border-color: var(--signal); }
+.card .view-hint{
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--signal);
+  margin-top: 2px;
+}
+
+/* ---------- lightbox / certificate modal ---------- */
+.lightbox{
+  position: fixed;
+  inset: 0;
+  background: rgba(6,6,6,0.92);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  padding: 24px;
+}
+.lightbox.open{ display: flex; }
+.lightbox img{
+  max-width: min(90vw, 700px);
+  max-height: 85vh;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+.lightbox-close{
+  position: absolute;
+  top: 24px; right: 24px;
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  padding: 10px 16px;
+  background: var(--bg-raised);
+  cursor: pointer;
+}
+.lightbox-close:hover{ border-color: var(--signal); color: var(--signal); }
